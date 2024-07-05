@@ -9,7 +9,7 @@ class WeatherServices{
   fetchWeather() async{
     final responce = await http.get(
       Uri.parse(
-        "https://api.openweathermap.org/data/2.5/weather?lat=10.530345&lon=76.214729&appid=fd4066867f6ee925ed1cf62a90b00c6f"
+        "https://api.openweathermap.org/data/2.5/weather?lat=10.530345&lon=76.214729&appid={your-api-key}"
       )
     );
     try {
